@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/example.css" />
+    <link rel="stylesheet" href="css/pygments.css" />
+    <link rel="stylesheet" href="css/easyzoom.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html"><img src="img/logo.png" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active marg" aria-current="page" href="Index.html"><h5>Inicio</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link marg" href="productos.html"><h5>Productos</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link marg" href="contacto.html"><h5>Contacto</h5></a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link marg" href="somos.html"><h5>Quienes Somos</h5></a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <input class="form-control me-2" id="palabra" type="search" placeholder="Continente" aria-label="Search">
+              <button class="btn button" id="Btnbuscar" type="submit">Buscar</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <h1>
+      Advertencia: Todos nuestros precios estan manejados en pesos mexicanos MXN
+    </h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-lg-4">
+        <div class="col Europa produ">
+          <div class="card h-100">
+            <img src="img/Productos/P1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Suizo Toblerone</h5>
+              <p class="card-text">Toblerone Pequeñas barras de caramelo de chocolate suizo con turrón de miel y almendras, chocolate negro, chocolate con leche, relleno de calcetines de regalo de chocolate de Navidad, bolsa de regalo de 125 unidades</p>
+            </div>
+            <div class="card-footer">
+              <h4 class="text-body-secondary">$1000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col Asia produ">
+          <div class="card h-100">
+            <img src="img/Productos/P2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mooncake</h5>
+              <p class="card-text">Pastelería Puff Mooncake 2 sabores</p>
+            </div>
+            <div class="card-footer">
+              <h4 class="text-body-secondary">$218 +costo por envio</h4>
+            </div>
+            <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                Receta Casera
+              </button>
+          </div>
+        </div>
+        <div class="col America produ">
+          <div class="card h-100">
+            <img src="img/Productos/P3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Reese's Peanut Butter Cups</h5>
+              <p class="card-text">REESE'S Peanut Butter Cups, Chocolate Candy, King Size (Paquete de 24 piezas)</p>
+            </div>
+            <div class="card-footer">
+              <h4 class="text-body-secondary">$880</h4>
+            </div>
+            <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                Receta Casera
+              </button>
+          </div>
+        </div>
+        <div class="col Oceanía produ">
+            <div class="card h-100">
+              <img src="img/Productos/P4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Golden Gaytime</h5>
+                <p class="card-text">Streets Ice Cream Golden Gaytime Birthday Cake 400ml 4's</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$173,64</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col Europa produ">
+            <div class="card h-100">
+              <img src="img/Productos/P5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Turron Español</h5>
+                <p class="card-text">El Siglo Turron Pack de 2 Sabores de 150 g Cada Uno: 
+                  Turron de Jijona, Turron con Almendras y Chocolate, Total 300 g
+                </p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$349</h4>
+              </div>
+            </div>
+        </div>
+        <div class="col Asia produ">
+            <div class="card h-100">
+              <img src="img/Productos/P6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Baklava</h5>
+                <p class="card-text">Dulces Arabes Baklava Variado Asateer Lata 375 Gr</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$470</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col America produ">
+            <div class="card h-100">
+              <img src="img/Productos/P7.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mazapán</h5>
+                <p class="card-text">	De la rosa mazapán ch 60 pz</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$66</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col Oceanía produ">
+            <div class="card h-100">
+              <img src="img/Productos/P8.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tim Tam</h5>
+                <p class="card-text">Tim Tam Galletas Arnotts | Australian Classics Sampler (Original, Chewy Caramel, Blanco, Oscuro) | Paquete de 4</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$1,600</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col Asia produ">
+            <div class="card h-100">
+              <img src="img/Productos/P9.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anmitsu</h5>
+                <p class="card-text">Choshiya Anmitsu Jelly (4 tazones)</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$508 +costo por envio</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col Africa produ">
+            <div class="card h-100">
+              <img src="img/Productos/P10.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ma'amoul</h5>
+                <p class="card-text">Maamoul con dátiles x12 Teashop 450g</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$74.19</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+                Receta  Casera
+              </button>
+            </div>
+        </div>
+        <div class="col America produ">
+            <div class="card h-100">
+              <img src="img/Productos/P11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Candy Corn</h5>
+                <p class="card-text">Dulces Nerds Gomitas Candy Corn 227 Gr</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$165</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+        <div class="col Oceanía produ">
+            <div class="card h-100">
+              <img src="img/Productos/P12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Caramel Slice</h5>
+                <p class="card-text">Dulces Caramel Slide Ojnika (Paquete de 6 piezas)</p>
+              </div>
+              <div class="card-footer">
+                <h4 class="text-body-secondary">$550</h4>
+              </div>
+              <button type="button" class="btn botonesinfo" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+                Receta Casera
+              </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Mooncake</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Mooncake</h1>
+          <h3>Para el Sustituto del Agua de lejía</h3>
+          <ul>
+            <li>1 taza agua</li>
+            <li>1/2 cucharadita bicarbonato de sodio</li>
+            <h3>Para los pasteles de luna</h3>
+            <li>1/2 taza miel</li>
+            <li>1/2 cucharadita sustituto del agua de lejía</li>
+            <li>1/3 taza aceite vegetal</li>
+            <li>2 tazas harina de pastel, más según sea necesario</li>
+            <li>1/2 cucharadita sal</li>
+            <li>12 onzaspasta de frijoles rojos</li>
+            <li>Spray de cocción</li>
+            <h3>Para el Lavado de Huevos</h3>
+            <li>2 huevos grandes</li>
+            <li>Las dos yemas de huevo</li>
+            <li>1 cucharada leche entera</li>
+            <li>1/4 cucharadita sal</li>
+            <h3>Preparación</h3>
+            <li>Combina el agua y el bicarbonato de sodio en una olla pequeña. Llevar a ebullición a fuego alto. Reduzca el fuego a medio y continúe hirviendo, aproximadamente 7 minutos.</li>
+            <li>Ponte a un lado para enfriar (mira la olla de cerca para asegurarte de que el agua no hierva por completo. Necesitará 1/2 cucharadita de sustituto de agua de lejía para esta receta).</li>
+            <h6>Para la masa</h6>
+            <li>Combine la miel, 1/2 cucharadita de sustituto de agua de lejía, aceite vegetal, harina de pastel y sal en el recipiente de un mezclador de soporte eléctrico equipado con el accesorio de paleta. Batir a velocidad media-baja hasta que la mezcla se junte en una bola.</li>
+            <li>Envuelva la masa en plástico y refrigere, al menos 30 minutos. Coloque la pasta de frijol rojo en un tazón pequeño. Refrigere, cubierto, al menos 30 minutos.</li>
+            <li>Mientras tanto, rocíe un poco de spray de cocción sobre su superficie de trabajo, luego cubra con un trozo de envoltura de plástico. El aceite ayudará a que la envoltura de plástico permanezca en su lugar. La masa es pegajosa y es mucho más fácil de manejar con la envoltura de plástico. Es útil usar guantes de látex o engrasar las manos para evitar que se peguen.</li>
+            <li>Divida la masa enfriada en 6 porciones iguales. Enrolla cada porción en una bola. Divida la pasta de frijol rojo en 6 porciones iguales. Enrolla cada porción en una bola.</li>
+            <li>Empuje la parte superior de la envoltura de plástico con un poco de harina. Aplane cada bola de masa en un disco de aproximadamente 1/4 de pulgada de espesor y coloque una bola de pasta de frijol rojo en el centro de cada uno.</li>
+            <li>Envuelva la masa alrededor de la pasta y pellizque la masa para sellar. Enrolla en una bola grande, lisa y uniforme.</li>
+            <li>Polvo el interior de un molde de pastel de luna con harina. Coloque la bola de masa llena en el molde y aplárela para llenar el molde.</li>
+            <li>Desmolde el pastel de luna en una bandeja para hornear forrada de pergamino. Repita con las porciones restantes. Deje al menos 2 pulgadas de espacio entre cada pastel de luna.</li>
+            <li>Coloque la bandeja para hornear de pasteles de luna en el congelador durante unos 10 minutos. La congelación ayudará a que el pastel de luna conserve su forma y diseño mientras se hornea.</li>
+            <h6>Para el lavado de huevo</h6>
+            <li>Reúne los ingredientes. Coloque un estante en el centro del horno y caliente a 375 F.</li>
+            <li>Combine el huevo, las yemas de huevo, la leche y la sal en un tazón pequeño y bata para combinar.</li>
+            <h6>Hornear</h6>
+            <li>Con un cepillo de pastelería, cepille ligeramente la parte superior y los lados de los pasteles de luna con el lavado de huevos. Repita con un segundo cepillo de lavado de huevos.</li>
+            <li>Hornee hasta que los pasteles de luna estén dorados, de 15 a 19 minutos. Deje enfriar completamente en la bandeja para hornear antes de quitar y servir.</li>
+            <li>Dejar reposar 1 a 2 dias</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Reese´s Peanut</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Reese´s Peanut</h1>
+          <h3>Ingredientes para el relleno</h3>
+          <ul>
+            <li>1 manga de galletas Graham trituradas (10 hojas)<p>Se puede cambiar por galletas cuadradas</p></li>
+            <li>1 taza de azúcar en polvo</li>
+            <li>1 1/2 taza de mantequilla de maní derretida</li>
+            <h3>Ingredientes para la corteza</h3>
+            <li>3 tazas de chispas de chocolate con leche</li>
+            <h3>Preparación</h3>
+            <li>Forre el molde para muffins con moldes para cupcakes. En un tazón mediano, mezcle las galletas Graham trituradas, el azúcar en polvo y la mantequilla de maní. (O simplemente ablandar durante unos 40 segundos en el microondas)</li>
+            <li>Mezcle hasta que se combinen.</li>
+            <li>Agregue una cucharadita colmada en el fondo de cada molde para cupcakes y extiéndala por el fondo.</li>
+            <li>Siga con una cucharada colmada de la mezcla de mantequilla de maní. Por último, agregue una cucharadita colmada del chocolate derretido y extiéndalo uniformemente sobre la capa de mantequilla de maní.</li>
+            <li>Refrigere durante aproximadamente una hora hasta que cuaje y esté firme.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Receta Casera</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Golden Gaytime</h1>
+          <h3>Ingredientes para el helado</h3>
+          <ul>
+            <li>1/2 taza de nuez de la india</li>
+            <li>1 plátano</li>
+            <li>1 taza de crema de coco</li>
+            <li>2 cucharadas de jarabe de arce</li>
+            <li>1/4 cucharadita de cúrcuma</li>
+            <li>1 cucharadita de extracto de vainilla</li>
+            <li>Una pizca de sal de mar</li>
+            <h3>Ingredientes para la corteza</h3>
+            <li>3 cucharadas de trigo sarraceno crudo</li>
+            <li>1 cucharada de azúcar de coco</li>
+            <h3>Preparación</h3>
+            <li>Coloque todos los ingredientes del helado en una licuadora de alta potencia y procese hasta que quede suave.</li>
+            <li>Vierta la mezcla en moldes para polos helados y colóquelos en el congelador para que cuaje durante la noche.</li>
+            <li>Use un mortero o una licuadora pequeña para mezclar los ingredientes de la corteza hasta que se haya triturado la mayor parte del trigo sarraceno.</li>
+            <li>Vierta la mezcla de la corteza sobre un plato pequeño.</li>
+            <li>Retire los polos helados de sus moldes y presione sobre la mezcla de la corteza, cubriendo uniformemente por todos lados.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Baklava</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Baklava</h1>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>450 gramos de nueces picadas</li>
+            <li>1 cucharadita de canela molida</li>
+            <li>1 paquete (16 onzas) de masa filo</li>
+            <li>1 taza de mantequilla, derretida</li>
+            <li>1 taza de azúcar blanca</li>
+            <li>1 taza de agua</li>
+            <li>½ taza de miel</li>
+            <li>1 cucharadita de extracto de vainilla</li>
+            <li>1 cucharadita de ralladura de limón</li>
+            <h3>Preparación</h3>
+            <li>Precalienta el horno a 350 grados F (175 grados C). Unte con mantequilla una fuente para hornear de 23 x 33 centimetros.</li>
+            <li>Mezcle las nueces y la canela. Desenrolle el filo y corte toda la pila por la mitad para que quepa en el plato. Cubre la pasta filo con un paño húmedo mientras preparas el baklava para evitar que se seque.</li>
+            <li>Coloque 2 hojas de masa filo en el fondo del plato preparado. Unte generosamente con un poco de mantequilla derretida. Espolvorea de 2 a 3 cucharadas de la mezcla de nueces encima. Repita las capas hasta que se utilicen todos los ingredientes, terminando con aproximadamente 6 hojas de masa filo.</li>
+            <li>Con un cuchillo afilado, corte el baklava en 4 filas largas y luego en diagonal 9 veces para formar 36 formas de diamantes. Asegúrese de cortar hasta el final de las capas.</li>
+            <li>Hornee en el horno precalentado hasta que esté dorado y crujiente, aproximadamente 50 minutos.</li>
+            <li>Mientras se hornea el baklava, combine el azúcar y el agua en una cacerola pequeña a fuego medio y deje hervir. Agrega la miel, la vainilla y la ralladura de limón; reduzca el fuego y cocine a fuego lento durante 20 minutos.</li>
+            <li>Retire el baklava del horno e inmediatamente vierta almíbar encima. Dejar enfriar por completo antes de servir. Almacenar descubierto.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Mazapán</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Mazapán</h1>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>Cacahuate tostado sin sal</li>
+            <li>Azúcar en polvo (Glass)</li>
+            <li>Chocolate semi-amargo (Opcional)</li>
+            <h3>Preparación</h3>
+            <li>En un procesador de alimentos (método preferido) o licuadora, agregue 1 1/2 taza de maní y 1 taza de azúcar glass. Haga puré hasta obtener una textura fina y en polvo. Deténgase con frecuencia para raspar los lados y el fondo para obtener una consistencia uniforme. </li>
+            <li>Coloque la mezcla de maní molido en un molde para galletas y comience a presionarla con los dedos, el dorso de una espátula o una cuchar</li>
+          <b>¡No tengas miedo de presionar muy fuerte! Cuanto más compacta sea la mezcla, mejor mantendrá su forma.</b>
+            <li>Retíralos con mucho cuidado ya que se rompen con mucha facilidad.</li>
+          <i>Consejo: Empuje desde los lados del molde y no desde el centro. Hazlo poco a poco para evitar romperlo.</i>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Receta Casera</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Tim Tam</h1>
+          <h3>Ingredientes para la galleta</h3>
+          <ul>
+            <li>115 g de mantequilla blanda</li>
+            <li>115 g de azúcar en polvo</li>
+            <li>1 huevo</li>
+            <li>30 g de cacao en polvo sin azúcar</li>
+            <li>150 g de harina común</li>
+            <li>1 pizca de sal</li>
+            <h3>Ingredientes para el relleno</h3>
+            <li>1 pizca de sal</li>
+            <li>85 g de azúcar glass</li>
+            <li> 1/2 cucharada de cacao en polvo sin azúcar</li>
+            <li>1/2 cucharada de bebida malteada en polvo (como Ovaltine u Horlicks)</li>
+            <h3>Ingredientes para la cobertura</h3>
+            <li>200 g de chocolate con leche o negro para derretir en 2 clases (Mantener a temperatura ambiente)</li>
+            <li>1 cucharadita de aceite de coco </li>
+            <h3>Preparación</h3>
+            <h6>Para las galletas</h6>
+            <li>Batir la mantequilla y el azúcar hasta que estén pálidos y esponjosos. Raspamos el bol, añadimos el huevo y seguimos batiendo hasta que se incorpore el huevo y la mezcla adquiera un color más claro.</li>
+            <li>Tamizar el cacao en polvo, la harina y la sal juntos (a veces el cacao en polvo tiene grumos) y luego incorporar a la mezcla de mantequilla hasta que esté todo incorporado. La masa quedará muy suave. Coloque la masa sobre una lámina de film transparente o un tapete Silpat y cubra con un segundo trozo de film transparente o un tapete Silpat. Enrolle la masa entre los dos hasta que tenga unos 3 mm de espesor. (Recuerda que los vas a intercalar juntos) Pon la masa en una bandeja y métela en el congelador por 30 minutos. Antes de cortar o utilizar un cortador en la forma que desees. Colóquelos en bandejas dejando aproximadamente 1 cm entre ellos; no se mueven mucho.</li>
+            <li>Precalienta el horno a 180°C y forra dos bandejas para hornear con papel de horno o usa moldes americanos como lo hacemos nosotros y no usamos nada.</li>
+            <li>Hornee durante 10 a 15 minutos, luego transfiéralo a una rejilla para que se enfríe por completo.</li>
+            <h6>Para el relleno</h6>
+            <li>Batir la mantequilla hasta que esté suave, tamizar los ingredientes restantes y batir hasta que estén bien combinados. Cuando tus galletas hayan salido del horno y se hayan enfriado, emparéjalas. Divida el relleno entre la mitad de ellos extendiendo una capa uniforme. Hay la cantidad justa, así que repártela en partes iguales. Cubra con las galletas restantes, luego póngalas en el refrigerador para que se enfríen mientras hace la cobertura.</li>
+            <h6>Para la cobertura</h6>
+            <li>Coloque el chocolate y el aceite de coco en un recipiente resistente al calor y derrítalos en el microondas a temperatura alta durante 30 segundos, revuelva bien y luego continúe con ráfagas de 15 a 20 segundos revolviendo bien después de cada ráfaga. Una vez que los chocolates estén casi derretidos, retírelos y revuelva suavemente hasta que quede suave.</li>
+            <li>Coloque una hoja de papel para hornear en el banco lista para colocar los Tim Tams recubiertos.</li>
+            <li>Hay algunas formas de hacer esto, nosotros usamos tenedores para chocolate, pero puedes usar tenedores comunes, son un poco más gruesos, por lo que el trabajo no es tan sencillo. O puedes ponerte un par de guantes para comida y usar las manos. Tome una galleta fría y cúbrala con cuidado con el chocolate. Déjalos enfriar en el refrigerador y luego escóndelos de los niños.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Anmitsu</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Anmitsu</h1>
+          <h3>Ingredientes para gelatina Kanten</h3>
+          <ul>
+            <li>Polvo de agar-agar o kanten 4 g (Gelatina de algas)</li>
+            <li>Agua 500 ml</li>
+            <li>Azúcar 2 cucharadas o más (opcional)</li>
+            <h3>Ingredientes para gelatina Anko</h3>
+            <li>Judía roja azuki 200 g</li>
+            <li>Azúcar 200 g</li>
+            <li>Agua</li>
+            <li>Pizca de sal</li>
+            <h3>Ingrediente para gelatina shiratama dango</h3>
+            <li>Harina shiratama-ko 80 ml</li>
+            <li>Agua 3 cucharadas</li>
+            <li>Azúcar 1 cucharadita</li>
+            <h3>Ingredientes para gelatina kuromitsu</h3>
+            <li>Azúcar moreno 100 g</li>
+            <li>Azúcar granulado 100 g</li>
+            <li>Agua 100 ml</li>
+            <h3>Preparación</h3>
+            <h6>kanten</h6>
+            <li>Añade el agua, el agar-agar en polvo en una cazuela pequeña</li>
+            <li>Mezclar y llevar a ebullición a fuego medio-alto sin dejar de remover</li>
+            <li>Cuando esté hirviendo y el polvo de agar-agar se haya disuelto, añadir el azúcar y cocer a fuego lento durante un par de minutos.</li>
+            <li>Retirar del fuego y verter en una fuente de tamaño pequeño. Cuando se haya enfriado, colocar en la nevera unos 20 minutos para que gelifique.</li>
+            <li>Desmoldar y cortar en forma de cubos.</li>
+            <h6>Anko</h6>
+            <li>Poner en remojo la judía roja en bastante agua durante 12 horas.</li>
+            <li>Eliminar un poco del agua de remojo y verter el resto en una olla express.</li>
+            <li>Poner a cocer a fuego vivo durante 35 minutos. Una vez destapado, colar para retirar toda el agua sobrante.</li>
+            <li>En la misma olla, añadir una pizca de sal. Calentar a fuego medio.</li>
+            <li>Incorporar el azúcar en tres tiempos. Dejar cocer la judía roja hasta obtener una textura untuosa.</li>
+            <h6>shiratama dango</h6>
+            <li>Añadir la harina shiratama-ko, el azúcar y 2 cucharadas de agua en un bol grande. Mezclar con una espátula de silicona hasta que se integre.</li>
+            <li>Amasar la mezcla con la mano y formar una bola, añadiendo ½ cucharada más de agua. Si la textura queda demasiado granulosa, empápate la mano y sigue amasando, en vez de echar agua directamente.</li>
+            <li>Hacer bolitas del tamaño de un huevo de codorniz</li>
+            <li>Hervir las bolitas 3 en una cazuela con agua durante 2 minutos.</li>
+            <li>Cuando las bolitas suban flotando a la superficie quiere decir que ya están hechas. Ahora puedes retirarlas y dejarlas en un bol con hielo para que se enfríen.</li>
+            <h6>kuromitsu</h6>
+            <li>Mezclar todos los ingredientes en un cazo y calentar a fuego medio hasta que hierva.</li>
+            <li>Cuando empiece a hervir, bajar el fuego hasta el mínimo y hervir a fuego lento durante unos 15 minutos hasta que se disuelva y alcance una textura de caramelo líquido.</li>
+            <h6>Preparación final</h6>
+            <li>En un bol, coloca algunos bloques de gelatina kanten, la pasta anko de judías rojas, las bolitas shiratama dango y añade un poco de caramelo kuromitsu.</li>
+            <li>También puedes añadir trozos de fruta cortada a dados o una bola de helado</li>
+            <li>Servir bien frio</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Maamoul</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Maamoul</h1>
+          <h3>Ingredientes para la masa</h3>
+          <ul>
+            <li>400 g de harina de trigo duro extrafina (o sémola)</li>
+            <li>300 g de harina</li>
+            <li>200 g de mantequilla, ablandada</li>
+            <li>200 g de azúcar glas (+ un poco para espolvorear)</li>
+            <li>1½ cucharadita de polvo de hornear</li>
+            <li>50 ml de leche</li>
+            <li>60 ml de agua de azahar (agua de rosas o una mezcla de ambos)</li>
+            <h3>Ingredientes para el relleno</h3>
+            <li>250 g de pasta de dátiles</li>
+            <li>3 cucharadas de nueces tostadas</li>
+            <li>5 cucharadas de pistachos tostados</li>
+            <li>3 cucharadas de almendras tostadas</li>
+            <h3>Preparación</h3>
+            <h6>Relleno</h6>
+            <li>Mezcle todos los ingredientes, o separe Todos los frutos secos y mezcle cada uno de ellos con pasta de dátiles.</li>
+            <h6>Masa</h6>
+            <li>En un recipiente grande, coloque la sémola extrafina, la harina, el azúcar glas, la mantequilla blanda y el polvo para hornear. Mezcle bien, hasta alcanzar una masa que se sienta como arena.</li>
+            <li>Agregue la leche y luego, la cantidad requerida de agua de azahar y/o agua de rosas. Forme una bola de masa. Debe quedar lisa, no pegajosa.</li>
+            <li>Cubra la masa con una envoltura de plástico y deje reposar durante 1 hora a temperatura ambiente.</li>
+            <li>Forme bolas de unos 15 gramos.</li>
+            <li>Rellene cada bola de masa con los dátiles y las nueces. Dé forma a la bola de nuevo con las manos para que el relleno quede completamente cubierto con masa.</li>
+            <li>Decore las bolas utilizando un molde de maamoul. Coloque la masa dentro del molde de maamoul y apriete bien, dele vuelta al molde y dé un golpecito rápido para desmoldarlo.</li>
+            <li>Coloque los maamoul en una bandeja para hornear forrada con papel pergamino y cocine en un horno precalentado a 180°C durante 15-20 minutos. Los pasteles deben permanecer muy blancos.</li>
+            <li>Cuando saque los maamoul del horno, espolvoréelos con azúcar glas.</li>
+            <li>os maamoul se pueden conservar durante ocho días en un recipiente hermético.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Candy Corn</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Candy Corn</h1>
+          <h3>Ingredientes</h3>
+          <ul>
+            <li>128 gramos azúcar de confitería</li>
+            <li>14 gramos leche seca sin grasa</li>
+            <li>1/4 cucharadita sal kosher (Se puede reemplazar con sal de mesa)</li>
+            <li>99 gramos azúcar</li>
+            <li>106 gramos jarabe de maíz ligero</li>
+            <li>37 mililitros agua</li>
+            <li>28 gramos mantequilla sin sal, a temperatura ambiente</li>
+            <li>3 mililitros extracto de vainilla</li>
+            <li>2 o 3 gotas de cada colorante alimenticio de pasta de gel amarillo y naranja</li>
+            <h3>Preparación</h3>
+            <li>Combine el azúcar, la leche seca y la sal de los confiteros en un procesador de alimentos. Pulse hasta que la mezcla esté suave y bien combinada, de 4 a 5 pulsos. Poner a un lado.</li>
+            <li>Combine el azúcar granulada, el jarabe de maíz y el agua en una olla de 2 cuartos. Coloque a fuego medio, cubra y cocine durante 4 minutos. Agregue la mantequilla y cocine el jarabe de azúcar hasta que registre 240 onzas en un termómetro digital de lectura instantánea. Mata el calor y retira el termómetro.</li>
+            <li>Divide la masa en 3 piezas iguales. Agregue 2 o 3 gotas de colorante amarillo para alimentos a una pieza y amase hasta que el color sea consistente en todo momento. Agregue 2 o 3 gotas de naranja a la segunda pieza y amase hasta que el color sea consistente. Deja la tercera pieza blanca.</li>
+            <li>Enrolle cada pedazo de masa en un hilo de aproximadamente 18 pulgadas de largo. Corte cada hilo por la mitad y enrolle cada pieza en un hilo que tenga aproximadamente 1/2 pulgada de grosor y 22 pulgadas de largo.</li>
+            <li>Coloque los hilos uno al lado del otro (amarillo, naranja y luego blanco) y presiónelos juntos con los dedos. Cortar en piezas de 4 pulgadas. Luego, usando una regla o un raspador de banco, presione cada registro en una cuña larga, mantener la sección amarilla ancha y hacer que la parte blanca llegue a una punta — este arreglo de color es clásico pero si quieres rebelarte, cambia el combo.</li>
+            <li>Use una cortadora de mantequilla de alambre, un cuchillo delgado o un cortador de pizza para cortar cada cuña en dulces individuales. Coloque los dulces en un trozo de pergamino hasta que estén secos, al menos 1 hora. Almacenar en un recipiente hermético con pergamino entre cada capa.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Receta casera</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>Caramel Slide</h1>
+          <h3>Ingredientes para la base</h3>
+          <ul>
+            <li>1 taza de harina</li>
+            <li> 1/2 taza de harina de almendras (poner las almendras enteras en el procesador hasta que se convierta en polvo. En caso de no tener procesador puedes hacerlo en la licuadora también)</li>
+            <li>1/2 taza de azúcar morena</li>
+            <li>2 cucharadas de cocoa</li>
+            <li>125 gramos de mantequilla derretida</li>
+            <h3>Ingredientes para el relleno</h3>
+            <li>1 lata de leche condensada</li>
+            <li>1/4 de taza de azúcar morena</li>
+            <li> 1 pizca de sal</li>
+            <li>3o gramos de mantequilla derretida</li>
+            <h3>Ingredientes para la cobertura</h3>
+            <li>200 gramos de chocolate semi-amargo</li>
+            <h3>Preparación</h3>
+            <li>Precalentar el horno a 180°C/350°F</li>
+            <li>Engrasar un pyrex de 20x20cm. Puedes usar los recipientes desechables de lata que venden en el súper, también.</li>
+            <li>Combinar los ingredientes de la base en el procesador o mano y presionar esta masa sobre la lata de aluminio. Hornear por 20 minutos y dejar enfriar.</li>
+            <li>Para el relleno, colocar todos los ingredientes en una olla  a fuego medio, moviendo constantemente durante unos 10 minutos hasta que espese y tenga un color algo dorado.  Esto puede demorar un poco más de tiempo. Colocar esta mezcla sobre la base y hornear nuevamente por 10 minutos más. Dejar enfriar y refrigerarlo por dos o tres horas.</li>
+            <li>Para la cobertura, derretir el chocolate en el microondas por unos minutos y con esto cubrir lo anterior, distribuyéndolo uniformemente. Refrigerar nuevamente por unas dos o tres horas.</li>
+            <li>Luego de refrigerarlo, cortar en cuadraditos y agregar sal marina en la parte superior.</li>
+          </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/funcion.js"></script>
+
+</body>
+</html>

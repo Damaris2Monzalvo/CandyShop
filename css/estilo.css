@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(245, 210, 241);
+}
+
+.container-fluid{ 
+    background-color: rgb(233, 151, 219);
+    margin: 2px;
+    border-radius: 50px;
+}
+.marg{
+    margin-left: 30px;
+    color: rgb(7, 7, 7);
+    font-family: 'Times New Roman';
+    font-size: 2vw;
+    }
+
+    .button{
+        background-color: rgb(217, 148, 238);
+        border-color: rgb(153, 88, 142);
+        margin-top: 7px;
+        margin-left: 7px;
+        font-family: Times
+    }
+    
+    .button:hover{
+        background-color: rgb(210, 149, 218);
+        border-color: rgb(178, 112, 187);
+        font-family: Times
+    }
+
+    .marg:hover{
+        font-size: 2.5vw;
+    }
+
+    .mgcard{
+        background-color: rgb(226, 193, 207);
+        color: rgb(53, 8, 27);
+        margin: 1px;
+        border-radius: 50px;
+    }
+
+    .botonesinfo{
+        background-color: rgb(171, 100, 192);
+        border-color: rgb(141, 57, 127);
+        width: 350px;
+        align-self: center;
+        margin-top: 7px;
+        margin-left: 7px;
+        font-family: 'Gill Sans'
+    }
+
+    .botonesinfo:hover{
+        background-color: rgb(233, 127, 247);
+        border-color: rgb(87, 47, 92);
+        font-family: 'Gill Sans'
+    }
+    
+    .cartascont{
+        background-color: rgb(195, 147, 207);
+        color: rgb(21, 5, 36);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+
+    .tarjet{
+        color: rgb(21, 5, 36);
+        background-color:azure;
+        margin-top: 25px;
+    }
+
+    .carta{
+        border-radius: 10px;
+        margin-left: 25px;
+        background-color: rgb(245, 203, 221);
+    }
+
+    .espacio{
+        margin-left: 25px;
+        font-family:'Franklin Gothic Medium';
+        font-size: 1.5vw;
+        color: rgb(21, 5, 36);
+    }
+    .imagenqr{
+        border-radius: 9px;
+    } 
+
+    .histor{
+        border-radius: 15px;
+        background-color: aliceblue;
+        margin-top: 25px;
+    }
+
+    h1{
+        color: rgb(121, 21, 146);
+        font-family: 'Times New Roman';
+        font-size: 2vw;
+    }
+
+    h4{
+        font-family:Times;
+        font-size: 1.5vw;
+        color: rgb(59, 27, 73);
+    }
+    
+h5{
+    font-family:Times;
+    font-size: 2vw;
+    color: rgb(23, 9, 29);
+}
+
+h6{
+    font-family:Times;
+    font-size: 1vw;
+    color: rgb(228, 140, 223);
+}
+
+h3{
+    font-family:Times;
+    font-size: 1.5vw;
+    color: rgb(211, 108, 206);
+}
+
+input{
+        font-family:Times;
+    }
+
+.produ{
+    background-color: rgb(227, 158, 236);
+    border-radius: 15px;
+}
