@@ -120,6 +120,12 @@ h3{
     color: rgb(211, 108, 206);
 }
 
+p{
+    font-family:Times;
+    font-size: 1vw;
+    color: rgb(59, 27, 73);
+}
+
 input{
         font-family:Times;
     }
